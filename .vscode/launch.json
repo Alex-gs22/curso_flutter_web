@@ -8,21 +8,21 @@
             "name": "curso_flutter_web",
             "request": "launch",
             "type": "dart",
-            "program": "diseño_chill/main.dart" // Especifica la ubicación de tu archivo main.dart
+            // "program": "diseño_chill/main.dart" // Especifica la ubicación de tu archivo main.dart
         },
         {
             "name": "curso_flutter_web (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile",
-            "program": "diseño_chill/main.dart" // Especifica la ubicación de tu archivo main.dart si no está en lib/
+            // "program": "diseño_chill/main.dart" // Especifica la ubicación de tu archivo main.dart si no está en lib/
         },
         {
             "name": "curso_flutter_web (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release",
-            "program": "diseño_chill/main.dart" // Especifica la ubicación de tu archivo main.dart
+            // "program": "diseño_chill/main.dart" // Especifica la ubicación de tu archivo main.dart
         }
     ]
 }

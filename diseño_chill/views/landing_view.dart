@@ -22,6 +22,7 @@ class _LandingViewState extends State<LandingView> {
             width: isOpen ? 210 : 60,
             decoration: BoxDecoration(
               // color: Colors.white,
+              color: Colors.brown[100],
               border: Border(
                 right: BorderSide(color: Colors.grey.shade300, width: 0.5),
               ),
@@ -46,70 +47,90 @@ class _LandingViewState extends State<LandingView> {
                 ),
                 const SizedBox(height: 20),
                 _buildMenuItem(
-                  Icons.book,
+                  Icons.work,
                   "Projects",
                 ),
                 _buildMenuItem(
-                  Icons.edit_note_rounded,
+                  Icons.edit,
                   "Drafts",
                 ),
                 _buildMenuItem(
-                  Icons.switch_access_shortcut_add_rounded,
+                  Icons.share,
                   "Shared with me",
+                ),
+                _buildMenuItem(
+                  Icons.star,
+                  "Starred",
+                ),
+                _buildMenuItem(
+                  Icons.folder,
+                  "Archived",
                 ),
                 const Spacer(),
                 _buildMenuItem(
-                  Icons.settings,
+                  Icons.coffee,
                   "Settings",
                 ),
               ],
             ),
           ),
           // Contenido principal
-          const Expanded(
+          Expanded(
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
               child: Column(
                 //arriba a abajo
                 mainAxisAlignment: MainAxisAlignment.start,
                 //de izquierda a derecha
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    children: [
-                      Text(
-                        'Side Hustle',
-                        style: TextStyle(
-                          fontSize: 35,
-                          fontWeight: FontWeight.bold,
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.brown[100],
+                      border: Border(
+                        bottom:
+                            BorderSide(color: Colors.grey.shade300, width: 0.5),
+                      ),
+                    ),
+                    child: const Row(
+                      children: [
+                        SizedBox(width: 20),
+                        Text(
+                          'Side Hustle',
+                          style: TextStyle(
+                            fontSize: 35,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      SizedBox(width: 20),
-                      Icon(
-                        Icons.keyboard_arrow_down,
-                        size: 30,
-                      ),
-                      Spacer(),
-                      Icon(
-                        //icono de un link
-                        Icons.link,
-                        size: 30,
-                      ),
-                      SizedBox(width: 20),
-                      Text(
-                        'Share',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
+                        SizedBox(width: 20),
+                        Icon(
+                          Icons.keyboard_arrow_down,
+                          size: 30,
                         ),
-                      ),
-                      SizedBox(width: 20),
-                      //icono de 3 puntos acostado
-                      Icon(
-                        Icons.more_horiz,
-                        size: 30,
-                      ),
-                    ],
+                        Spacer(),
+                        Icon(
+                          //icono de un link
+                          Icons.link,
+                          size: 30,
+                        ),
+                        SizedBox(width: 20),
+                        Text(
+                          'Share',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(width: 20),
+                        //icono de 3 puntos acostado
+                        Icon(
+                          Icons.more_horiz,
+                          size: 30,
+                        ),
+                        SizedBox(width: 20),
+                      ],
+                    ),
                   ),
                 ],
               ),
