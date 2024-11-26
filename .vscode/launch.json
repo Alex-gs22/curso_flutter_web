@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {   
+            "name": "curso_flutter_web",
+            "request": "launch",
+            "type": "dart",
+            "program": "diseño_chill/main.dart" // Especifica la ubicación de tu archivo main.dart
+        },
+        {
+            "name": "curso_flutter_web (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "program": "diseño_chill/main.dart" // Especifica la ubicación de tu archivo main.dart si no está en lib/
+        },
+        {
+            "name": "curso_flutter_web (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "diseño_chill/main.dart" // Especifica la ubicación de tu archivo main.dart
+        }
+    ]
+}
